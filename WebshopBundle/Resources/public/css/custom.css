@@ -2585,7 +2585,20 @@ color: #444;
 .slider__activation__wrap--5 .single-slide:focus {
     outline: none;
 }
-
+.chevron {
+    background-color: #3fd9b2;
+    padding:12px 14px 10px;
+    position:fixed;
+    bottom:40px;
+    right:10px;
+    z-index: 100;
+}
+.chevron .fa-chevron-up {
+    font-size:25px;
+}
+.chevron .fa-chevron-up:hover {
+    color: #ffffff;
+}
 
 
 
