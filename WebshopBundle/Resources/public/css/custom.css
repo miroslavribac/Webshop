@@ -2592,6 +2592,7 @@ color: #444;
     bottom:40px;
     right:10px;
     z-index: 100;
+    display: none;
 }
 .chevron .fa-chevron-up {
     font-size:25px;
