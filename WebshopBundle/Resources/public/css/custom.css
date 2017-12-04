@@ -857,7 +857,7 @@ nav.off__canvars--menu ul li ul li a:hover {
 .body__overlay {
     backface-visibility: hidden;
     background-color: rgba(0, 0, 0, 0.8);
-    cursor: url("../../images/icons/close-20.png") 25 25, pointer;
+    cursor: url("../images/icons/close-20.png") 25 25, pointer;
     height: 100%;
     left: 0;
     opacity: 0;
@@ -1357,6 +1357,9 @@ a {
 a:hover,
 a:focus,
 a:active {
+    color: #3fd9b2;
+}
+.fa-search:hover{
     color: #3fd9b2;
 }
 p a:hover,
@@ -2161,20 +2164,20 @@ color: #444;
 .lan__select li:hover > a {
     color: #3fd9b2;
 }
-.lan__select > li::before {
-    color: #ffffff;
-    content: "";
-    font-family: Material-Design-Iconic-Font;
-    font-size: 25px;
-    position: absolute;
-    right: 32px;
-    top: 0;
-}
+/*.lan__select > li::before {*/
+    /*color: #ffffff;*/
+    /*content: "";*/
+    /*font-family: "FontAwesome";*/
+    /*font-size: 25px;*/
+    /*position: absolute;*/
+    /*right: 32px;*/
+    /*top: 0;*/
+/*}*/
 .lan__select > li::after {
     background-attachment: scroll;
     background-clip: border-box;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("../../images/others/shape/lan.png");
+    background-image: url("../images/others/shape/lan.png");
     background-origin: padding-box;
     background-repeat: no-repeat;
     background-size: cover;
