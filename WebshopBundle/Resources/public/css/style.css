@@ -161,7 +161,7 @@
     margin-top: 6px;
 }
 .section__title--2 h2::before {
-    background: rgba(0, 0, 0, 0) url("../images/others/shape/1.png") repeat scroll 0 0 / cover ;
+    background: rgba(0, 0, 0, 0) url("images/others/shape/1.png") repeat scroll 0 0 / cover ;
     content: "";
     height: 5px;
     left: -46%;
@@ -172,7 +172,7 @@
     z-index: -1;
 }
 .section__title--2 h2::after {
-    background: rgba(0, 0, 0, 0) url("../images/others/shape/2.png") repeat scroll 0 0 / cover ;
+    background: rgba(0, 0, 0, 0) url("images/others/shape/2.png") repeat scroll 0 0 / cover ;
     content: "";
     height: 5px;
     right: -46%;
@@ -187,7 +187,7 @@
     padding-left: 24px;
 }
 .section__title::before {
-    background: rgba(0, 0, 0, 0) url("../images/others/shape/3.png") repeat scroll 0 0 / cover ;
+    background: rgba(0, 0, 0, 0) url("images/others/shape/3.png") repeat scroll 0 0 / cover ;
     bottom: 0;
     content: "";
     height: 160px;
@@ -265,7 +265,7 @@
     padding-left: 19px;
 }
 .cat__hover__inner::before {
-    background: rgba(0, 0, 0, 0) url("../images/others/shape/4.png") repeat scroll 0 0 / cover ;
+    background: rgba(0, 0, 0, 0) url("images/others/shape/4.png") repeat scroll 0 0 / cover ;
     bottom: 0;
     content: "";
     height: 160px;
@@ -1485,7 +1485,7 @@
     text-transform: uppercase;
 }
 .title__line--3::before {
-    background: rgba(0, 0, 0, 0) url("../images/others/shape/5.png") no-repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("images/others/shape/5.png") no-repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 4px;
@@ -1838,7 +1838,7 @@ select.ht__select {
     -moz-appearance: none;
     -ms-appearance: none;
     -o-appearance: none;
-    background-image: url("../images/icons/select-option.png");
+    background-image: url("images/icons/select-option.png");
     background-position: right 7% center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -2089,7 +2089,7 @@ select.select__size {
     -moz-appearance: none;
     -ms-appearance: none;
     -o-appearance: none;
-    background: rgba(0, 0, 0, 0) url("../images/icons/select-option.png") no-repeat scroll 87% 7px / 10px 5px;
+    background: rgba(0, 0, 0, 0) url("images/icons/select-option.png") no-repeat scroll 87% 7px / 10px 5px;
     padding-right: 16px;
 }
 
