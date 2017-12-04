@@ -21,6 +21,11 @@ Remove default base.html.twig template and symlink from repo:
     sudo rm app/Resources/views/base.html.twig
     ln -s ~/projects/web_shop/repo/base.html.twig ~/projects/web_shop/app/Resources/views/
     
+Create parts dir for include templates in base.html.twig template and symlink to app/Resources/views/ :
+
+    mkdir repo/WebshopBundle/Resources/views/parts
+    sudo ln -s ~/projects/web_shop/repo/WebshopBundle/Resources/views/parts ~/projects/web_shop/app/Resources/views/
+    
 Symlink apache2.conf file;
 
     sudo ln -s ~/projects/web_shop/repo/apache2.conf /etc/apache2/sites-available/webshop.local.conf
