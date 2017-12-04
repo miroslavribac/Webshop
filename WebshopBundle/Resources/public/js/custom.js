@@ -1,3 +1,7 @@
 $(document).ready(function(){
-    alert('Works');
+
+    const height = $(window).height();
+    const scrollTop = $(window).scrollTop();
+    alert(height);
+
 });
