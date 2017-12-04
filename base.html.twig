@@ -2,12 +2,29 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" type="image/x-icon" href="">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('bundles/webshop/css/bootstrap.min.css') }}" />
+            <link rel="stylesheet" href="{{ asset('bundles/webshop/css/owl.carousel.min.css') }}" />
+            <link rel="stylesheet" href="{{ asset('bundles/webshop/css/owl.theme.default.min.css') }}" />
+            <link rel="stylesheet" href="{{ asset('bundles/webshop/css/core.css') }}" />
+            <link rel="stylesheet" href="{{ asset('bundles/webshop/css/shortcodes.css') }}" />
+            <link rel="stylesheet" href="{{ asset('bundles/webshop/css/style.css') }}" />
+            <link rel="stylesheet" href="{{ asset('bundles/webshop/css/responsive.css') }}" />
+            <link rel="stylesheet" href="{{ asset('bundles/webshop/css/custom.css') }}" />
+        {% endblock %}
+
     </head>
     <body>
+    <div class="wrapper">
+        {% include "parts/header.html.twig" %}
         {% block body %}{% endblock %}
+    </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
