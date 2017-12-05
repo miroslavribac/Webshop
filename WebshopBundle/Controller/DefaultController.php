@@ -12,7 +12,7 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('WebshopBundle:Default:index.html.twig');
+        return $this->render('WebshopBundle:Webshop:index.html.twig');
     }
 
     /**
@@ -20,7 +20,7 @@ class DefaultController extends Controller
      */
     public function womenAction()
     {
-        return $this->render('WebshopBundle:Default:women.html.twig');
+        return $this->render('WebshopBundle:Webshop:women.html.twig');
     }
 
     /**
@@ -28,7 +28,7 @@ class DefaultController extends Controller
      */
     public function menAction()
     {
-        return $this->render('WebshopBundle:Default:men.html.twig');
+        return $this->render('WebshopBundle:Webshop:men.html.twig');
     }
 
     /**
@@ -36,7 +36,7 @@ class DefaultController extends Controller
      */
     public function childrenAction()
     {
-        return $this->render('WebshopBundle:Default:children.html.twig');
+        return $this->render('WebshopBundle:Webshop:children.html.twig');
     }
 
     /**
@@ -44,7 +44,7 @@ class DefaultController extends Controller
      */
     public function blogAction()
     {
-        return $this->render('WebshopBundle:Default:brands.html.twig');
+        return $this->render('WebshopBundle:Webshop:brands.html.twig');
     }
 
     /**
@@ -52,6 +52,6 @@ class DefaultController extends Controller
      */
     public function contactAction()
     {
-        return $this->render('WebshopBundle:Default:contact.html.twig');
+        return $this->render('WebshopBundle:Webshop:contact.html.twig');
     }
 }
