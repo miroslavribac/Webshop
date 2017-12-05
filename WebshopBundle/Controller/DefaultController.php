@@ -40,11 +40,11 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/blog", name="blog")
+     * @Route("/brands", name="brands")
      */
     public function blogAction()
     {
-        return $this->render('WebshopBundle:Default:blog.html.twig');
+        return $this->render('WebshopBundle:Default:brands.html.twig');
     }
 
     /**
