@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 
      // Open - close search field in header
-    function openClosesearchField() {
+    function toggleSearchField() {
         $(".header__search.search.search__open").click(function(){
             $( "body" ).toggleClass( "search__box__show__hide");
         });
@@ -32,7 +32,7 @@ $(document).ready(function(){
             $( "body" ).toggleClass( "search__box__show__hide");
         });
     }
-    openClosesearchField();
+    toggleSearchField();
 
     function toggleShoppingCart() {
         $(".cart__menu").click(function(e){
