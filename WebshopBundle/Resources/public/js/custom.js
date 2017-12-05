@@ -34,6 +34,19 @@ $(document).ready(function(){
     }
     openClosesearchField();
 
+    function toggleShoppingCart() {
+        $(".cart__menu").click(function(){
+            $(".body__overlay").toggleClass("is-visible");
+            $(".shopping__cart").toggleClass("shopping__cart__on");
+        });
+        $(".body__overlay").click(function(){
+            $(".shopping__cart").toggleClass("shopping__cart__on");
+            $(".body__overlay").toggleClass("is-visible");
+        });
+
+    }
+    toggleShoppingCart();
+
 
 
 });
