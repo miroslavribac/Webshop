@@ -32,11 +32,11 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/product", name="product")
+     * @Route("/children", name="children")
      */
-    public function productAction()
+    public function childrenAction()
     {
-        return $this->render('WebshopBundle:Default:product.html.twig');
+        return $this->render('WebshopBundle:Default:children.html.twig');
     }
 
     /**
