@@ -35,7 +35,8 @@ $(document).ready(function(){
     openClosesearchField();
 
     function toggleShoppingCart() {
-        $(".cart__menu").click(function(){
+        $(".cart__menu").click(function(e){
+            e.preventDefault();
             $(".body__overlay").toggleClass("is-visible");
             $(".shopping__cart").toggleClass("shopping__cart__on");
         });
