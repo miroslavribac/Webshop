@@ -38,11 +38,20 @@ class AdminController extends Controller
     {
         return $this->render("WebshopBundle:Admin_Panel:articles.html.twig");
     }
+
     /**
      * @Route("/admin/categories/add", name="add_category")
      */
     public function addCategoryAction()
     {
         return $this->render("WebshopBundle:Admin_Panel:add_category.html.twig");
+    }
+
+    /**
+     * @Route("/admin/brands/add", name="add_brand")
+     */
+    public function addBrandAction()
+    {
+        return $this->render("WebshopBundle:Admin_Panel:add_brand.html.twig");
     }
 }
