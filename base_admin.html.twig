@@ -31,7 +31,7 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
     <header class="main-header">
-        <a href="index2.html" class="logo">
+        <a href="{{ path("admin") }}" class="logo">
             <img src="{{ asset('bundles/webshop/images/logo/logo.png') }}" alt="logo images">
         </a>
         <nav class="navbar navbar-static-top">
@@ -286,7 +286,14 @@
                 </div>
             </form>
             <ul class="sidebar-menu" data-widget="tree">
-
+                <li><a href="{{ path('admin_users') }}"><i class="fa fa-user" aria-hidden="true"></i>Menage users</a></li>
+                <li><a href="{{ path('admin_categories') }}"><i class="fa fa-list" aria-hidden="true"></i>Menage categories</a></li>
+                <li><a href="{{ path('admin_brands') }}"><i class="fa fa-imdb" aria-hidden="true"></i>Menage brands</a></li>
+                <li><a href="{{ path('admin_articles') }}"><i class="fa fa-product-hunt" aria-hidden="true"></i>Menage articles</a></li>
+                <li><a href="{{ path('add_category') }}"><i class="fa fa-plus-square" aria-hidden="true"></i>Add new category</a></li>
+                <li><a href="{{ path('add_brand') }}"><i class="fa fa-plus-square" aria-hidden="true"></i>Add new brand</a></li>
+                <li><a href="{{ path('add_article') }}"><i class="fa fa-plus-square" aria-hidden="true"></i></i>Add new article</a></li>
+                <li><a href="{{ path('statistics') }}"><i class="fa fa-bar-chart" aria-hidden="true"></i>Statistics</a></li>
             </ul>
         </section>
     </aside>
