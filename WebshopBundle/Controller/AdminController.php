@@ -54,4 +54,12 @@ class AdminController extends Controller
     {
         return $this->render("WebshopBundle:Admin_Panel:add_brand.html.twig");
     }
+
+    /**
+     * @Route("/admin/articles/add", name="add_article")
+     */
+    public function addArticleAction()
+    {
+        return $this->render("WebshopBundle:Admin_Panel:add_article.html.twig");
+    }
 }
