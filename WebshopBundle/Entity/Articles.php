@@ -44,8 +44,9 @@ class Articles
 
     /**
      * @var int
-     *
      * @ORM\Column(name="category_id", type="integer")
+     * @ORM\ManyToOne(targetEntity="Categories", inversedBy="articles")
+     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
      */
     private $categoryId;
 
