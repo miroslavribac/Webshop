@@ -30,4 +30,12 @@ class AdminController extends Controller
     {
         return $this->render("WebshopBundle:Admin_Panel:categories.html.twig");
     }
+
+    /**
+     * @Route("/admin/articles", name="articles")
+     */
+    public function articlesAction()
+    {
+        return $this->render("WebshopBundle:Admin_Panel:articles.html.twig");
+    }
 }
