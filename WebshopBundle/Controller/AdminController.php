@@ -4,6 +4,9 @@ namespace WebshopBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
+use WebshopBundle\Entity\Categories;
+use WebshopBundle\Form\CategoriesType;
 
 class AdminController extends Controller
 {
@@ -50,9 +53,24 @@ class AdminController extends Controller
     /**
      * @Route("/admin/categories/add", name="add_category")
      */
-    public function addCategoryAction()
+    public function addCategoryAction(Request $request)
     {
-        return $this->render("WebshopBundle:Admin_Panel:add_category.html.twig");
+        $em = $this->getDoctrine()->getManager();
+        $categories = new Categories();
+
+        $form = $this->createForm(CategoriesType::class, $categories);
+        $form->handleRequest($request);
+
+        if($form->isValid() && $form->isSubmitted()) {
+            $em->persist($categories);
+            $em->flush();
+
+            return $this->redirectToRoute("add_category");
+        }
+
+        return $this->render("WebshopBundle:Admin_Panel:add_category.html.twig", [
+            "form" => $form->createView()
+        ]);
     }
 
     /**
