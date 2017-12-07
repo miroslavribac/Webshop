@@ -75,6 +75,8 @@ class Articles
      * @var int
      *
      * @ORM\Column(name="parent", type="integer")
+     * @ORM\ManyToOne(targetEntity="Brands", inversedBy="articles")
+     * @ORM\JoinColumn(name="brand_id", referencedColumnName="id")
      */
     private $parent;
 

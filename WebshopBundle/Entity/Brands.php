@@ -37,6 +37,16 @@ class Brands
     private $description;
 
     /**
+     * @ORM\OneToMany(targetEntity="Articles", mappedBy="brands")
+     */
+    private $articles;
+
+    public function __construct()
+    {
+        $this->articles = new ArrayCollection();
+    }
+
+    /**
      * Get id
      *
      * @return int
