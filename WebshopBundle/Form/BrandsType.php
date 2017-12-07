@@ -20,12 +20,15 @@ class BrandsType extends AbstractType
             ->add('name', TextType::class,[
                 "attr" => [
                     "class" => "form-control"
-                ]
+                ],
+                "label" => "Brand name:"
             ])
             ->add('description', TextareaType::class, [
                 "attr" => [
-                    "class" => "form-control"
-                ]
+                    "class" => "form-control",
+                    "rows" => 7
+                ],
+                "label" => "Description:"
             ])
             ->add('save', SubmitType::class, [
                 "attr" => [
