@@ -80,12 +80,16 @@ class AdminController extends Controller
      */
     public function addBrandAction(Request $request)
     {
+        $em = $this->getDoctrine()->getManager();
         $brands = new Brands();
         $form = $this->createForm(BrandsType::class, $brands);
         $form->handleRequest($request);
 
         if($form->isValid() && $form->isSubmitted()){
-            var_dump($form);
+            $em->persist($brands);
+            $em->flush();
+
+            return $this->redirectToRoute("add_brand");
         }
 
         return $this->render("WebshopBundle:Admin_Panel:add_brand.html.twig", [
