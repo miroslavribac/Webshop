@@ -14,4 +14,12 @@ class AdminController extends Controller
     {
         return $this->render('WebshopBundle:Admin_Panel:index.html.twig');
     }
+
+    /**
+     * @Route("/admin/users", name="users")
+     */
+    public function usersAction()
+    {
+        return $this->render("WebshopBundle:Admin_Panel:users.html.twig");
+    }
 }
