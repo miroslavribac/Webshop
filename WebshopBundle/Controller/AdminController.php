@@ -16,7 +16,7 @@ class AdminController extends Controller
     }
 
     /**
-     * @Route("/admin/users", name="users")
+     * @Route("/admin/users", name="admin_users")
      */
     public function usersAction()
     {
@@ -24,7 +24,7 @@ class AdminController extends Controller
     }
 
     /**
-     * @Route("/admin/categories", name="categories")
+     * @Route("/admin/categories", name="admin_categories")
      */
     public function categoriesAction()
     {
@@ -32,7 +32,15 @@ class AdminController extends Controller
     }
 
     /**
-     * @Route("/admin/articles", name="articles")
+     * @Route("/admin/brands", name="admin_brands")
+     */
+    public function brandsAction()
+    {
+        return $this->render("WebshopBundle:Admin_Panel:brands.html.twig");
+    }
+
+    /**
+     * @Route("/admin/articles", name="admin_articles")
      */
     public function articlesAction()
     {
