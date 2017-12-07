@@ -22,4 +22,12 @@ class AdminController extends Controller
     {
         return $this->render("WebshopBundle:Admin_Panel:users.html.twig");
     }
+
+    /**
+     * @Route("/admin/categories", name="categories")
+     */
+    public function categoriesAction()
+    {
+        return $this->render("WebshopBundle:Admin_Panel:categories.html.twig");
+    }
 }
