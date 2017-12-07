@@ -5,7 +5,9 @@ namespace WebshopBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
+use WebshopBundle\Entity\Brands;
 use WebshopBundle\Entity\Categories;
+use WebshopBundle\Form\BrandsType;
 use WebshopBundle\Form\CategoriesType;
 
 class AdminController extends Controller
@@ -76,9 +78,19 @@ class AdminController extends Controller
     /**
      * @Route("/admin/brands/add", name="add_brand")
      */
-    public function addBrandAction()
+    public function addBrandAction(Request $request)
     {
-        return $this->render("WebshopBundle:Admin_Panel:add_brand.html.twig");
+        $brands = new Brands();
+        $form = $this->createForm(BrandsType::class, $brands);
+        $form->handleRequest($request);
+
+        if($form->isValid() && $form->isSubmitted()){
+            var_dump($form);
+        }
+
+        return $this->render("WebshopBundle:Admin_Panel:add_brand.html.twig", [
+            "form" => $form->createView()
+        ]);
     }
 
     /**
