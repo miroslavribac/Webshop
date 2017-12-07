@@ -62,4 +62,12 @@ class AdminController extends Controller
     {
         return $this->render("WebshopBundle:Admin_Panel:add_article.html.twig");
     }
+
+    /**
+     * @Route("/admin/statistics", name="statistics")
+     */
+    public function statisticsAction()
+    {
+        return $this->render("WebshopBundle:Admin_Panel:statistics.html.twig");
+    }
 }
